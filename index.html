@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Christmas Tree</title>
+
+  <!-- Tailwind (solo UI) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="bg-black overflow-hidden">
+
+  <!-- UI -->
+  <div class="absolute top-4 left-4 z-10 flex flex-col items-center gap-1">
+    <label class="text-[9px] text-yellow-100/60 tracking-widest uppercase">
+      Mode
+    </label>
+    <select
+      id="lightModeBtn"
+      class="bg-white/10 text-white text-xs rounded px-2 py-1 outline-none"
+    >
+      <option value="sparkle">Sparkle</option>
+      <option value="steady">Steady</option>
+      <option value="off">Off</option>
+    </select>
+  </div>
+
+  <!-- Canvas -->
+  <canvas id="scene"></canvas>
+
+  <script src="./truco.js"></script>
+</body>
+</html>
